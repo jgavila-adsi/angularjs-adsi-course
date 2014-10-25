@@ -16,6 +16,10 @@
   	 	<span class="hecho-{{tarea.hecho}}">{{tareas[0].texto}}</span>
   	 </li>
   	</ul>
+    <form ng-submit="agregarTarea()">
+      <input type="texto" size="30" placeholder="Agreagar nueva tarea" ng-model="textoNuevaTarea">
+      <button class="btn btn-primary" type="submit">Agregar</button>
+    </form>
   </div>
 </body>
 </html>
